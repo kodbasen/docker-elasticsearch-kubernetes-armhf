@@ -19,7 +19,7 @@ http:
   enabled: ${HTTP_ENABLE}
   compression: true
   cors:
-    enabled: true
+    enabled: false
 
 cloud:
   kubernetes:
