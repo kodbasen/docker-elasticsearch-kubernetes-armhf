@@ -1,6 +1,7 @@
 FROM kodbasen/java-jdk-armhf:jdk-8u91-b14
 
-ENV VERSION=2.3.1 \
+ENV VERSION=2.3.2 \
+    K8S_PLUGIN_VERSION=2.3.1 \
     ES_JAVA_OPTS=-server
 
 # Install Elasticsearch.
@@ -18,7 +19,8 @@ COPY config/logging.yml /elasticsearch/config
 COPY config/es-plugin-install.yml /elasticsearch/config/elasticsearch.yml
 
 # Install
-RUN /elasticsearch/bin/plugin install io.fabric8/elasticsearch-cloud-kubernetes/${VERSION} --verbose
+#RUN /elasticsearch/bin/plugin install io.fabric8/elasticsearch-cloud-kubernetes/${K8S_PLUGIN_VERSION} --verbose
+RUN /elasticsearch/bin/plugin install https://dl.dropboxusercontent.com/u/50924723/elasticsearch-cloud-kubernetes-2.3.2.zip
 
 # Add config
 COPY config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml

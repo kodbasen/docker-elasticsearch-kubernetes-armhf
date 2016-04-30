@@ -11,5 +11,5 @@ publish:
     email: lars.mogren@gmail.com
     repo: kodbasen/elasticsearch-kubernetes-armhf
     tag:
-    - "2.3.1"
+    - "2.3.2"
     - latest

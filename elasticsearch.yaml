@@ -64,7 +64,7 @@ spec:
           capabilities:
             add:
               - IPC_LOCK
-        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.1
+        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.2
         imagePullPolicy: IfNotPresent
         env:
         - name: KUBERNETES_CA_CERTIFICATE_FILE
@@ -120,7 +120,7 @@ spec:
           capabilities:
             add:
               - IPC_LOCK
-        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.1
+        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.2
         imagePullPolicy: IfNotPresent
         env:
         - name: KUBERNETES_CA_CERTIFICATE_FILE
@@ -173,7 +173,7 @@ spec:
           capabilities:
             add:
               - IPC_LOCK
-        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.1
+        image: kodbasen/elasticsearch-kubernetes-armhf:2.3.2
         imagePullPolicy: IfNotPresent
         env:
         - name: KUBERNETES_CA_CERTIFICATE_FILE
